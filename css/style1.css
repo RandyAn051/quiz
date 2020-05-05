@@ -1,0 +1,57 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+.section{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(gambar/gambar33.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: slide 15s infinite;
+}
+
+.content{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.content h1{
+	color: white;
+	font-size: 42px;
+	letter-spacing: 2px;
+	-webkit-text-stroke: 2px #000;
+}
+
+a{
+	background: linear-gradient(to right, #3f51b5,#00bcd4);
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 10px 24px;
+	color: black;
+	text-decoration: none;
+	font-size: 18px
+}
+
+@keyframes slide{
+	0%{
+		background-image: url(gambar/gambar33.jpg);
+	}
+	25%{
+		background-image: url(gambar/gambar6.jpg);
+	}
+	55%{
+		background-image: url(gambar/gambar1.jpg);
+	}
+	85%{
+		background-image: url(gambar/gambar4.png);
+	}
+}

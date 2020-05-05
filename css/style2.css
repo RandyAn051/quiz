@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: sans-serif;
+
+}
+
+.MyAccount{
+	position: absolute;
+	left: 50%;
+	top: 51.5%;
+	transform: translate(-50%,-50%);
+	background:rgba(0,0,0,0.5);
+	padding: 20px;
+	width: 45%;
+	box-shadow: 0 0 10px 5px black;
+}
+
+.MyAccount h2{
+	text-align: center;
+	color: white;
+	padding-top: 15px
+}
+
+.avatar{
+	background: #BDC3CF;
+	color: #2c3e50;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 0;
+	transform: translate(-80% , -110%);
+	border-radius: 50%;
+}
+
+input[type="text"] {
+	margin-top: 10px;
+	width: 100%;
+	border-bottom: 1px solid white;
+	padding:4px 0; 
+}
+
+input[type="password"] {
+	margin-top: 10px;
+	width: 100%;
+	border-bottom: 1px solid white;
+	padding:4px 0; 
+}
+
+input[type="email"] {
+	margin-top: 10px;
+	width: 100%;
+	border-bottom: 1px solid white;
+	padding:4px 0; 
+}
+
+.account{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-bottom: 1px solid white;
+	padding:4px 0; 
+}
+
+.button{
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 120px;
+	background-color: transparent;
+	padding: 8px;
+	border:1.5px solid white;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: white;
+	cursor: pointer;
+}
+
+.button:hover{
+	background:linear-gradient(90deg, #3f51b5,#00bcd4);;
+	color: #000;
+}
+
+.animationarea{
+	background: linear-gradient(90deg, #3f51b5,#00bcd4);
+	height: 100vh;
+	width: 100%;
+}
+
+.animationarea:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 100vh solid transparent;
+	border-left: 100vh solid #fff;
+	opacity: 0.1;
+}
+
+.animationarea:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: 100vh solid transparent;
+	border-top: 100vh solid #fff;
+	opacity: 0.1;
+}
+

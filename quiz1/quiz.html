@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<script type="text/javascript">
+		function proses() {
+			var a = parseInt(document.getElementById("nilai1").value);
+			var b = parseInt(document.getElementById("nilai2").value);
+
+			var plus = document.getElementById("tambah");
+  			var min = document.getElementById("kurang");
+	
+			if (plus.checked==true) {
+  				document.getElementById("hasil").innerHTML = Number(a) + Number(b);
+  			}
+			
+			if(min.checked==true) {
+  				document.getElementById("hasil").innerHTML = Number(a) - Number (b);
+  			}
+		}
+	</script>
+</head>
+<body>
+ 
+     <p>Nilai 1 :
+        <input type="number" id="nilai1" >
+
+     <p>Nilai 2 : 
+        <input type="number" id="nilai2" >
+
+
+     <p>Opr :
+     	<input type="radio" name="radio" id="tambah" ><label>Tambah</label>
+
+		<input type="radio" name="radio" id="kurang" ><label>kurang</label>
+
+		<br><br>
+
+       	<input type="button" value="Proses" onclick="proses()"><br><br>
+
+       	<label>Ini adalah hasil:</label>
+
+      <label id="hasil"></label>
+
+
+
+</body>
+</html>
